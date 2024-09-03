@@ -1,7 +1,7 @@
 # Syntax Basics and Types
 
 ## How websites are rendered
-![Image depicting how a client system requests a website and a server responds with the website back.](./assets/server-request.png)
+![Image depicting how a client system requests a website and a server responds with the website back.](assets/server-request.png)
 
 ## How do we add JavaScript to our page?
 You have multiple options to add JavaScript to your page, including inline as well as in a separate document much like CSS.
