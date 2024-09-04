@@ -46,6 +46,6 @@ Function Expressions are treated like regular variable assignments. The variable
 ### Summary
 - Hoisting in JavaScript moves declarations to the top of their scope, but not the assignments.
 - Function Declarations are fully hoisted, allowing you to use the function before it's declared in your code.
-- Function Expressions are not hoisted in the same way; only the variable declaration is hoisted, not the function assignment. - - - 
+- Function Expressions are not hoisted in the same way; only the variable declaration is hoisted, not the function assignment.
 - Therefore, the function is not accessible until the code reaches the assignment.
 - This distinction is crucial to understand how and when functions are available in your code, ensuring you avoid unexpected errors related to hoisting.
