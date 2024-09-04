@@ -93,11 +93,11 @@ When we store a reference type in a variable, like an object, it adds the object
 Example: We make an array, and we store that array in a variable. It adds a pointer to the stack, and it locks this variable name "names", which points to the object in the heap, and it grabs that array for us.
 
 ### DEMONSTRATION
-[Example demonstrating how primative types when copies reference the value of the variable](../assets/primative-type-behaviour.png)
+![Example demonstrating how primative types when copies reference the value of the variable](../assets/primative-type-behaviour.png)
 > Image from Net Ninja's Modern JavaScript Tutorial on YouTube
 If ***scoreOne*** originally was 50, and you made a copy "***scoreTwo***", it would refernce the number 50. And if you then changed ***scoreOne*** to 100, ***scoreTwo*** would remain unchanged at 50. 
 
-[Example demonstrating how reference types when copied reference the pointer in the stack and reference the same object.](../assets/reference-type-behavior.png)
+![Example demonstrating how reference types when copied reference the pointer in the stack and reference the same object.](../assets/reference-type-behavior.png)
 > Image from Net Ninja's Modern JavaScript Tutorial on YouTube.
 
 See [Examples](05-objects.js)
