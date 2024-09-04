@@ -56,11 +56,34 @@ This is a context object, and it represents the context how the current code is 
 **Whats happening here?**
 When we use this inside a method, JavaScript sets the this keyword to be the object the method was used on.
 
-
+**Using this inside an object**
 To use this inside a method on its own ('this'), you must use a regular function. However, you can modify the property in the object so that it's a little shorter/easier to type.
 ![Image showing how you can remove the function keyword and the colon and it will still be a regular function in a method in an object](../assets/regular-function.png)
 
 
+### Math Object
+We access the math object by saying Math, with a capital M.
+
+Math.floor(area)
+
+## Primative and Reference Types
+**What are they?**
+In JavaScript primative & reference types are:
+
+| PRIMATIVE TYPES |     REFERENCE TYPES    |
+|----------------:|------------------------|
+| - NUMBERS       | - ALL TYPES OF OBJECTS |
+| - STRINGS       | - OBJECT LITERALS      |
+| - BOOLEANS      | - ARRAYS               |
+| - NULL          | - FUNCTIONS            |
+| - UNDEFINED     | - DATES                |
+| - SYMBOLS       | - ALL OTHER OBJECTS    |
+
+**Whats the difference?**
+The difference between primative and reference types is how they are stored and used in memory. When we create a primative value, and we assign it to a variable. That variable is stored on something that is called the stack. The stack is just different values stored in memory. They can be accessed pretty quickly when we want to use one. But the space inside the stack is quite limited. So when we create a reference type like an object literal, or an array, that is stored on something called the heap. The heap has more space available, so it can hold more complex object types, but its a bit slower.
+
+![Image from Net Ninja depicting the stack holding primative types and the heap holding more complex data types](../assets/stack-heap.png)
+> Image from Net Ninja depicting the stack holding primative types and the heap holding more complex data types
 
 See [Examples](05-objects.js)
 
