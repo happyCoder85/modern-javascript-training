@@ -15,3 +15,4 @@ You have multiple options to add JavaScript to your page, including inline as we
 ### In a separate file (like CSS)
 ![Image depicting adding JavaScript from an external file in your html](./assets/JavaScript-Placement-3.png)
 ![Image depicting JavaScript in a separate file](./assets/JavaScript-Placement-3-2.png)
+
