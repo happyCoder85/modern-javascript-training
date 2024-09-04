@@ -85,6 +85,21 @@ The difference between primative and reference types is how they are stored and 
 ![Image from Net Ninja depicting the stack holding primative types and the heap holding more complex data types](../assets/stack-heap.png)
 > Image from Net Ninja depicting the stack holding primative types and the heap holding more complex data types
 
+**Why is this important?**
+When we store a primative value in a variable it adds that value to the stack, and it locks the variable name as an accessor to that value. So it knows when we want to access that value to use that name to go out and get us that value.
+
+When we store a reference type in a variable, like an object, it adds the object to the heap. And then, it adds a pointer to that object on the stack.
+
+Example: We make an array, and we store that array in a variable. It adds a pointer to the stack, and it locks this variable name "names", which points to the object in the heap, and it grabs that array for us.
+
+### DEMONSTRATION
+[Example demonstrating how primative types when copies reference the value of the variable](../assets/primative-type-behaviour.png)
+> Image from Net Ninja's Modern JavaScript Tutorial on YouTube
+If ***scoreOne*** originally was 50, and you made a copy "***scoreTwo***", it would refernce the number 50. And if you then changed ***scoreOne*** to 100, ***scoreTwo*** would remain unchanged at 50. 
+
+![Example demonstrating how reference types when copied reference the pointer in the stack and reference the same object.](../assets/reference-type-behavior.png)
+> Image from Net Ninja's Modern JavaScript Tutorial on YouTube.
+
 See [Examples](05-objects.js)
 
 
