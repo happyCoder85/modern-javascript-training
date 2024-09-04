@@ -76,5 +76,18 @@ const random = Math.random(); // Random number between 0 and 1.
 // console.log(Math.round(random * 100) + 1); // Random number between 1 and 100.
 
 // Primitive Types
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`); // scoreOne: 50 scoreTwo: 50
+
+scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`); // scoreOne: 100 scoreTwo: 50
 
 // Reference Types
+const userOne = { name: 'jon', age: 30 };
+const userTwo = userOne;
+
+// console.log(userOne, userTwo);
+userOne.age = 40;
+// console.log(userOne, userTwo); // Both userOne and userTwo will have an age of 40.
