@@ -97,7 +97,7 @@ Example: We make an array, and we store that array in a variable. It adds a poin
 > Image from Net Ninja's Modern JavaScript Tutorial on YouTube
 If ***scoreOne*** originally was 50, and you made a copy "***scoreTwo***", it would refernce the number 50. And if you then changed ***scoreOne*** to 100, ***scoreTwo*** would remain unchanged at 50. 
 
-![Example demonstrating how reference types when copied reference the pointer in the stack and reference the same object.](../assets/reference-type-behavior.png)
+[Example demonstrating how reference types when copied reference the pointer in the stack and reference the same object.](../assets/reference-type-behavior.png)
 > Image from Net Ninja's Modern JavaScript Tutorial on YouTube.
 
 See [Examples](05-objects.js)
