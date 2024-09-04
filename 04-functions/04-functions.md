@@ -18,6 +18,8 @@ The function is called with the argument ***"Jon"***, and the returned value is 
 **Output**
 The greeting message is then logged to the console.
 
+
+
 See [Examples](04-functions.js)
 
 
