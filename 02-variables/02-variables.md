@@ -14,7 +14,7 @@ There are 3 ways to define variables in JavaScript (let, var, const).
     - Mutability: Variables declared with const cannot be reassigned (i.e., you cannot change the reference to another value), but if the variable hols an object, you can still mutate the object's properties.
 
 ### Numbers
-![Table with the different arithmetic operators available to use in JavaScript](Variables-Numbers.png)
+![Table with the different arithmetic operators available to use in JavaScript](../assets/Variables-Numbers.png)
 
 **Order of Operation - BIDMAS**
     - **B**rackets
@@ -24,7 +24,7 @@ There are 3 ways to define variables in JavaScript (let, var, const).
     - **A**ddition
     - **S**ubtraction
 
-![Declaration of a variable with a complex math problem ](math-problem.png)
+![Declaration of a variable with a complex math problem ](../assets/math-problem.png)
 
 1. Brackets first
     10 - 3 = 7
