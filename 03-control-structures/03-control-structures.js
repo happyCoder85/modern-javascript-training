@@ -96,3 +96,25 @@ switch (grade) {
         // console.log("You failed");
 }
 
+// Block Scope
+let num = 30; // Global Scope -> Can be used anywhere in the file.
+
+// let num = 40; // SyntaxError: Identifier 'num' has already been declared
+
+if (true) {
+    let age = 40; // Can redefine a variable within the code block -> But only keeps num 40 within code block. (Local scope)
+    // console.log("Inside Block: ", num); // Inside Block: 30")
+
+    let onlyVisibleInCodeBlock = true;
+    num = 40; // It will change the value of num to 40
+    if(true) {
+        //console.log('Inside 2nd Block: ', num); // Inside 2nd Block: 40 (Getting value from most immediate scope inside first IF statement)
+        let age = 50; // Can redefine a variable within the code block -> But only keeps num 50 within code block. (Local scope)
+        //console.log("Inside 2nd Block: ", age); // Inside 2nd Block: 50
+    }
+
+    //console.log("Inside Block: ", age); // Inside Block: 40
+}
+
+// console.log(onlyVisibleInCodeBlock); // ReferenceError: onlyVisibleInCodeBlock is not defined (Cannot access variable outside of code block)
+// console.log("Outside Block: ", num); // Outside Block: 30

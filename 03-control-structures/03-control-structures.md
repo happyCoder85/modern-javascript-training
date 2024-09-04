@@ -46,7 +46,8 @@ Sometimes, you want to skip a loop result and continue the loop. For example: Yo
 ### Switch Statements
 Switch statements are used to replace IF/IF Else statements. You use them the same way, and provide various options that could be true and depending on which condition ends up being met, a code block is executed.
 
-
+### Block Scope
+When you declare a variable outside of a control structure it is globally available, no matter if we are using let or const. When you declare a variable inside a code block (If statement for example), that variable is only available within that code block and nested code blocks. Var however ignores block scope -> We can define var within a code block, and it will be available outside of the block. It's much better to use let and const where possible.
 
 See [Examples](03-control-structures.js)
 
