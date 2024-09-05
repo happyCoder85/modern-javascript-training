@@ -66,6 +66,15 @@ To prevent this in JavaScript by using the ***style*** property. (console.log(ti
 
 If you are ever unsure about a style property go to console in developer tools and look through the list.
 
+**Easily ADD/REMOVE classes from elements**
+First you need to have an external style sheet like the one created in this folder. See [EXTERNAL CSS](styles.css).
+Then you want to grab the p tag, using a querySelector. Then you can log out the entire class list that the selected element has.
+
+You use the .add or .remove to add or remove a class from an element. (p.classList.add('error'))
+
+**What if you want to toggle a class?**
+You are able to turn off a class if it is currently on, and turn on a class if it is currently off using the .toggle function. (title.classList.toggle('test')). When you use it and the element doesn't have that class, it will add it. And if it does have it, it will remove it.
+
 See [Examples](06-javascript-and-the-dom.js)
 
 

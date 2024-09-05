@@ -81,7 +81,7 @@ const msg = document.querySelector('p'); // Place a css selector in the querySel
  msg.setAttribute('class', 'success'); // Set the class attribute of the first paragraph element to 'success'
  
  // Changing CSS styles
- msg.setAttribute('style', 'color: green;'); // Set the style attribute of the first paragraph element to 'color: green;'
+ // msg.setAttribute('style', 'color: green;'); // Set the style attribute of the first paragraph element to 'color: green;'
 
 // Get the color of the h1 element
 const title2 = document.querySelector('h1'); // Place a css selector in the querySelector method to select the first h1 element in the HTML file
@@ -92,4 +92,27 @@ title2.style.margin = '50px'; // Set the margin style of the first h1 element to
 title2.style.color = 'crimson'; // Set the color style of the first h1 element to 'crimson'
 
 title2.style.fontSize = '60px'; // Set the font size style of the first h1 element to '60px'
+
+// If you want to delete a style you can set it to an empty string
+title2.style.margin = ''; // Delete the margin style of the first h1 element
+
+// Changing a style using a class
+const content2 = document.querySelector('p.error'); // Place a css selector in the querySelector method to select the first paragraph element in the HTML file
+
+// Log out a list of this elements classes
+// console.log(content2.classList); // Log the class list of the first paragraph element to the console
+// The above should now show the class 'error'
+
+// If you add other classes to the HTML they will appear in the class list
+
+// Add a class to the element
+// First remove error from the p class="error" in index.html
+
+//content2.classList.add('success'); // Add a class of 'success
+content2.classList.add('error'); // Add a class of 'error'
+
+// Toggle a class
+const h1title = document.querySelector('.title'); // Place a css selector in the querySelector method to select the first element with a class of 'title' in the HTML file
+
+h1title.classList.toggle('test'); // Toggle a class of 'test' on the first element with a class of 'title' If we have the class already on it will remove it, and if its not on it will add it. 
 
