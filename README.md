@@ -46,3 +46,7 @@ First, read the md file provided for each section (01, 02, etc..) then in a web 
         - Break
         - Continue
         - Switch Statements
+        - Functions
+            - Regular and Arrow
+        - Objects
+        - JavaScript and the DOM
